@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Page2
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-range min="0" max="2" [(ngModel)]="rangeValue"></ion-range>
+    </ion-item>
+    <ion-item>{{rangeValue}}</ion-item>
+    <ion-item>
+      <button ion-button (tap)="counterValue = counterValue + 1">Increment counter</button>
+    </ion-item>
+    <ion-item>{{counterValue}}</ion-item>
+  </ion-list>
+</ion-content>
